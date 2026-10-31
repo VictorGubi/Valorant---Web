@@ -20,35 +20,12 @@ body {
   font-family: "Open Sans";
   font-size: 16px;
   line-height: 1.5;
-
   margin: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  min-height: 100vh;
-}
-
-.header {
-  grid-area: header;
-  background-color: var(--color-primary);
-  color: var(--color-background);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .main {
-  grid-area: main;
   background-color: var(--color-background);
   padding: 1.5rem;
-}
-
-.footer {
-  grid-area: footer;
 }
 
 .wireframe {
@@ -184,10 +161,6 @@ button:focus-visible {
 
 .choice {
   white-space: nowrap;
-}
-
-.footer {
-  justify-self: center;
 }
 
 @media (min-width: 640px) {
