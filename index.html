@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header"></header>
+    <main class="main">
+      <form class="form-wireframe" action="/submit_registration">
+        <div class="paired-fields">
+          <div class="field">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              maxlength="16"
+              id="username"
+              name="username"
+              placeholder="Enter your username"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="gamertag">Riot ID:</label>
+            <input
+              type="text"
+              pattern="#[A-Za-z0-9]{3,5}"
+              id="gamertag"
+              name="gamertag"
+              placeholder="Enter your riot ID - #(3-5 characters)"
+              required
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            minlength="8"
+            id="password"
+            name="password"
+            placeholder="Create a password"
+            required
+          />
+        </div>
+        <div>
+          <p>Gender:</p>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            required
+          />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" required />
+          <label for="other">Other</label>
+        </div>
+        <div class="field">
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            min="13"
+            max="100"
+            id="age"
+            name="age"
+            placeholder="Enter your age"
+            required
+          />
+        </div>
+        <div>
+          <label for="region">Region:</label>
+          <select id="region" name="region" required>
+            <option value="">Select your region</option>
+            <option value="na">North America</option>
+            <option value="eu">Europe</option>
+            <option value="apac">Asia Pacific</option>
+            <option value="latam">Latin America</option>
+            <option value="me">Middle East</option>
+          </select>
+        </div>
+        <div class="paired-fields">
+          <div>
+            <p>Preferred Role:</p>
+            <div class="choice-group">
+              <span class="choice">
+                <input type="radio" id="duelist" name="role" value="duelist" />
+                <label for="duelist">Duelist</label>
+              </span>
+
+              <span class="choice">
+                <input
+                  type="radio"
+                  id="initiator"
+                  name="role"
+                  value="initiator"
+                />
+                <label for="initiator">Initiator</label>
+              </span>
+
+              <span class="choice">
+                <input
+                  type="radio"
+                  id="sentinel"
+                  name="role"
+                  value="sentinel"
+                />
+                <label for="sentinel">Sentinel</label>
+              </span>
+
+              <span class="choice">
+                <input
+                  type="radio"
+                  id="controller"
+                  name="role"
+                  value="controller"
+                />
+                <label for="controller">Controller</label>
+              </span>
+            </div>
+          </div>
+          <div>
+            <p>Your Playstyle:</p>
+            <div class="choice-group">
+              <span class="choice">
+                <input
+                  type="checkbox"
+                  id="anchor"
+                  name="playstyle"
+                  value="anchor"
+                />
+                <label for="anchor">Anchor</label>
+              </span>
+              <span class="choice">
+                <input
+                  type="checkbox"
+                  id="lurker"
+                  name="playstyle"
+                  value="lurker"
+                />
+                <label for="lurker">Lurker</label>
+              </span>
+              <span class="choice">
+                <input
+                  type="checkbox"
+                  id="strategic"
+                  name="playstyle"
+                  value="strategic"
+                />
+                <label for="strategic">Strategic</label>
+              </span>
+              <span class="choice">
+                <input
+                  type="checkbox"
+                  id="in game leader"
+                  name="playstyle"
+                  value="in game leader"
+                />
+                <label for="in game leader">In-Game Leader</label>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>Looking for a competitive team?</p>
+          <input type="radio" id="yes" name="competitive-team" value="yes" />
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="competitive-team" value="no" />
+          <label for="no">No</label>
+        </div>
+        <div>
+          <label for="rank">Current Rank:</label>
+          <select id="rank" name="rank" required>
+            <option value="">Select your rank</option>
+            <option value="iron 1">Iron 1</option>
+            <option value="iron 2">Iron 2</option>
+            <option value="iron 3">Iron 3</option>
+            <option value="bronze 1">Bronze 1</option>
+            <option value="bronze 2">Bronze 2</option>
+            <option value="bronze 3">Bronze 3</option>
+            <option value="silver 1">Silver 1</option>
+            <option value="silver 2">Silver 2</option>
+            <option value="silver 3">Silver 3</option>
+            <option value="gold 1">Gold 1</option>
+            <option value="gold 2">Gold 2</option>
+            <option value="gold 3">Gold 3</option>
+            <option value="platinum 1">Platinum 1</option>
+            <option value="platinum 2">Platinum 2</option>
+            <option value="platinum 3">Platinum 3</option>
+            <option value="diamond 1">Diamond 1</option>
+            <option value="diamond 2">Diamond 2</option>
+            <option value="diamond 3">Diamond 3</option>
+            <option value="ascendant 1">Ascendant 1</option>
+            <option value="ascendant 2">Ascendant 2</option>
+            <option value="ascendant 3">Ascendant 3</option>
+            <option value="immortal 1">Immortal 1</option>
+            <option value="immortal 2">Immortal 2</option>
+            <option value="immortal 3">Immortal 3</option>
+            <option value="radiant">Radiant</option>
+          </select>
+        </div>
+        <div>
+          <label for="started-playing">When did you start playing?</label>
+          <input type="date" id="started-playing" name="started-playing" />
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>
